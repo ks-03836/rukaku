@@ -1,0 +1,268 @@
+<!DOCTYPE html>  <!--DOCTYPE宣言　文書がHTMLのどのバージョンで作成されているかを宣言する-->
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">  <!--文字コードのはmeta要素のcharset属性を使う-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--スマートフォンで表示した時に正しく表示するためのviewportを設定する-->
+  <title>ロメロルカク</title>  <!--タイトルはtitle要素を使う-->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">  <!--スマホ表示時にスタイリングをしやすくするためもう一つdiv要素で箱を作る-->
+      <a class="header-logo" href="./index.html">  <!--ロゴをクリックするとトップページに戻れるように設定する 画像ファイルにリンクを張る場合はimg要素を<a></a>で囲む-->
+        <img src="./image/logo1 1.png">
+      </a>
+      
+      <div class="nav-wrapper">  <!--右上のサイドメニューであるナビゲーションエリアを設定する-->
+        <nav class="header-nav">  <!--このサイトメニューはWebページの主要なナビケーションとなるからnav要素を配置-->
+          <ul class="nav-list">
+            <li class="nav-item"><a href="">黒田ゼミについて</a></li>
+            <li class="nav-item"><a href="">コース案内</a></li>
+            <li class="nav-item"><a href="">合格者の声</a></li>
+            <li class="nav-item"><a href="">新着情報</a></li>
+            <li class="nav-item"><a href="">よくある質問</a></li>
+            <li class="nav-item"><a href="">お問い合わせはこちら</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="burger-btn" >  <!--スマホ表示ではハンバーガーメニューを使用するため、button要素を配置する-->
+        <span class="bar bar_top"></span>
+        <span class="bar bar_mid"></span>
+        <span class="bar bar_bottom"></span>
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <div class="first-view">
+      <div class="first-view-text">
+        <div class="first-view-box">
+          <p>独自の完全個別指導で</p>
+        </div>
+        <div class="first-view-box">
+          <p>一人一人のサポートを徹底します</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-info">
+      <div class="new-info-box">
+        <div class="info-title">
+          <p class="title">新着情報</p>
+        </div>
+        <ul>
+          <li>
+            <p class="date">2020.01.01</p>
+            <p class="text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+          </li>
+          <li>
+            <p class="date">2020.01.01</p>
+            <p class="text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+          </li>
+          <li>
+            <p class="date">2020.01.01</p>
+            <p class="text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+          </li>
+        </ul>
+        <div class="view-more">
+          <a href="">View more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reason">
+      <div class="reason-title">
+        <h1>黒田ゼミが選ばれる理由</h1>
+      </div>
+      <ul class="item-list">
+        <li>
+          <img src="./image/rea-1.png" alt="">
+          <dl>
+            <dt>生徒にあった指導法</dt>
+            <dd> 世の中には一人として同じ人間はいません。ということは指導の仕方も生徒の数だけ存在すると考えられます。私はできるだけその子を見て、何がその子の弱点であり、どうすれば改善出来るかを伝えていくことが本当の意味での指導であると考えています。
+              そのための個別指導です。</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="./image/rea-2.png" alt="">
+          <dl>
+            <dt>安心のコミュニケーション</dt>
+            <dd>よりよい指導をするために必要なものは生徒、保護者の方との信頼関係であると私は考えます。なので、私はなるべく多く生徒と話し、ときには指導以外のことも生徒と語るようにしています。そうしてコミュニケーションをたくさんとることで、会話力、思考力、ひいては国語力の向上に繋がると思っています。</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="./image/rea-3.png" alt="">
+          <dl>
+            <dt>別途テキスト代不要</dt>
+            <dd>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</dd>
+          </dl>
+        </li>
+      </ul>
+      <div class="btn-area">
+        <a class="reason-btn" href="">黒田ゼミについてもっと詳しく ＞</a>
+      </div>
+    </div>
+
+    <div class="course">
+      <div class="course-title-area">
+        <h1>Course</h1>
+        <p>コース案内</p>
+      </div>
+      <ul class="course-list">
+        <li class="sub">
+          <div class="course-name-box">
+            <h2>中学Bコース</h2>
+            <p>対象：中学1年</p>
+          </div>
+          <div class="course-price">
+            <span class="yen">¥</span>
+            <span class="price">25,000</span>
+            <span class="month">/月</span>
+          </div>
+          <div class="course-ex-list">
+            <ul class="ex">
+              <li>月~日曜週2回(土日忙しい人向け)</li>
+              <li>教材等諸経費＋10,000円（テキスト配布時</li>
+              <li>中2進級時はAorSに変更</li>
+              <li>保証金無し</li>
+            </ul>
+          </div>
+        </li>
+        <li class="sub">
+          <div class="course-name-box">
+            <h2>コースA1</h2>
+            <p>対象：高校生</p>
+          </div>
+          <div class="course-price">
+            <span class="yen">¥</span>
+            <span class="price">60,000~</span>
+            <span class="month">/月</span>
+          </div>
+          <div class="course-ex-box">
+            <p class="week">【月・火・水・木・金】<br>【土】授業or自習<br>【日】自習のみ</p>
+            <p class="time">1コマ90分／週1回</p>
+          </div>
+        </li>
+        <li class="sub">
+          <div class="course-name-box">
+            <h2>コースA1</h2>
+            <p>対象：高校生</p>
+          </div>
+          <div class="course-price">
+            <span class="yen">¥</span>
+            <span class="price">60,000~</span>
+            <span class="month">/月</span>
+          </div>
+          <div class="course-ex-box">
+            <p class="week">【月・火・水・木・金】<br>【土】授業or自習<br>【日】自習のみ</p>
+            <p class="time">1コマ90分／週1回</p>
+          </div>
+        </li>
+      </ul>
+      <div class="btn-area">
+        <a class="course-btn" href="">その他のコースを見る ＞</a>
+      </div>
+    </div>
+
+    <div class="manager">
+      <div class="manager-text-area">
+        <h1>Manager</h1>
+        <p>塾長から</p>
+      </div>
+      <div class="manager-contents-area">
+        <div class="manager-image">
+          <img src="./image/nabeshima.jpg" alt="">
+        </div>
+        <div class="manager-text">
+          <p class="mg-text">
+            皆さまはじめまして。<br>
+            塾長の鍋島です。<br>
+            今年の6月で黒田ゼミも創設から丸4年が経ちます。<br>
+            恥ずかしながら私は同じ仕事を4年間続けたのはこの黒田ゼミが初めてです。<br>
+            とても飽きやすい性格なのでいつも大体1年くらいで転職をしてしまっていました。<br>
+            ところが今回4年も続けることができ、今後も続けていけると確信しています。<br>
+            それは単純に「飽きない」からです。<br>
+            なぜなら指導内容は同じでも同じ生徒は一人としていないので常に新鮮さに溢れる仕事だからです。<br>
+            勉強の内容自体はここ数十年表面的には変わってきたとは思うのですが、根本的な内容は変わっていない様に思います。<br>
+            人間は長い年月をかけ、言葉や文字を使い後世にいろいろなものを残そうとしてきました。なのに、これだけ長く続いているものなのに未だ子供たちは勉強というものに苦労しているように見えます。
+            私はそれこそが勉強の本質なのではないかと考えるようになりました。<br>
+            社会に出ると、「やりたくないことをしなければならない」場面に出くわすことが多々あります。<br>
+            勉強とは子供が成長する過程でそういった場面でも乗り切っていく練習としてあるのではないかと考えます。<br>
+            私自身まだまだ成長途中なので完璧な指導とはほど遠いと常々感じていますが、これからもたくさんの生徒、保護者の方々と共に成長していけたらと切に願っております。
+          </p>
+          <p class="manager-name">塾長<br>鍋島 大毅</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="access">
+      <div class="access-title-area">
+        <h1>Access</h1>
+        <p>アクセス</p>
+      </div>
+      <div class="access-wrap">
+        <div class="access-contents-area">
+          <div class="access-logo">
+            <img src="./image/logo1 1.png" alt="">
+          </div>
+          <div class="appearance">
+            <img src="./image/appe.jpg" alt="">
+          </div>
+          <div class="access-text">
+            <p>黒田ゼミ／澄川校</p>
+            <p>〒005-0003 札幌市南区澄川3条2丁目3-5 江本ビル2F</p>
+            <p>TEL : 080-2874-1268</p>
+            <p>E-mail : info@kuroda-zemi.jp</p>
+          </div>
+          <div class="access-text">
+            <p>＜お問い合わせ可能時間＞</p>
+            <p>月曜～金曜日／16時～21時まで</p>
+            <p>土・日曜日／10時〜20時（最終入室18時まで）</p>
+            <p class="aste">※平日17時以降は生徒指導中の為、電話対応できない場合がございますのでご了承ください。</p>
+          </div>
+          <div class="contact">
+            <a class="contact-btn" href="">
+              <span class="jp">お問い合わせ</span>
+              <span class="en">CONTACT</span>
+              <span class="ar">＞</span>
+            </a>
+          </div>
+        </div>
+        <div class="access-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.1396057721745!2d141.36417881547084!3d43.01744860132445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a7c9e8b9279%3A0x2c94a12748258ffd!2z6buS55Sw44K844OfIOa-hOW3neagoQ!5e0!3m2!1sja!2sjp!4v1657178909173!5m2!1sja!2sjp"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <nav class="site-menu">  <!--このサイトメニューはWebページの主要なナビケーションとなるからnav要素を配置-->
+      <ul>
+        <li><a href="">黒田ゼミについて</a></li>
+        <li><a href="">コース案内</a></li>
+        <li><a href="">講師の紹介</a></li>
+        <li><a href="">合格者の声</a></li>
+      </ul>
+      <ul>
+        <li><a href="">塾長から</a></li>
+        <li><a href="">よくある質問</a></li>
+        <li><a href="">新着情報</a></li>
+      </ul>
+      <ul>
+        <li><a href="">お問い合わせ</a></li>
+        <li><a href="">新型コロナウイルス感染予防対策について</a></li>
+        <li><a href="">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+    <p class="copyright"><small>Copyright © 2019 Kuroda Seminar All Rights Reserved.</small>  <!--本文の内容と比べて重要ではない情報を掲載する際はテキストの意味合いを弱めるsmall要素で囲む-->
+    </p>  <!--コンテンツの著作権を表すコピーライト-->
+  </footer>
+</body>
+
+</html>
